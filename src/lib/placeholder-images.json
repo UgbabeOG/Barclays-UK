@@ -1,3 +1,10 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "douglas-henshall-avatar",
+      "description": "Avatar for Douglas Henshall",
+      "imageUrl": "https://picsum.photos/seed/douglas/100/100",
+      "imageHint": "man portrait"
+    }
+  ]
 }
