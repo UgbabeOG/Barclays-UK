@@ -137,6 +137,11 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
         <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6 bg-background overflow-auto">
             {children}
         </main>
+        <footer className="border-t bg-muted/40 px-6 py-4">
+            <p className="text-center text-xs text-muted-foreground">
+                © 2024 Barclays PLC. This is a simulated application for demonstration purposes. Not a real banking service.
+            </p>
+        </footer>
       </div>
     </div>
   );
