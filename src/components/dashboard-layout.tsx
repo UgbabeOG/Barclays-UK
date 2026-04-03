@@ -30,6 +30,7 @@ import {
 import {
   Sheet,
   SheetContent,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -93,6 +94,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="flex flex-col p-0">
+                <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
                 <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
                     <Link href="/" className="flex items-center gap-2 font-semibold">
                         <BarclaysLogo className="h-8 w-8 text-primary" />
