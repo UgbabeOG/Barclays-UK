@@ -54,7 +54,11 @@ const transferSchema = z.object({
 type TransferFormValues = z.infer<typeof transferSchema>;
 
 export default function TransferPage() {
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [dialogState, setDialogState] = useState({
+    open: false,
+    title: "",
+    description: "",
+  });
 
   const form = useForm<TransferFormValues>({
     resolver: zodResolver(transferSchema),
@@ -67,9 +71,12 @@ export default function TransferPage() {
   });
 
   function onSubmit(values: TransferFormValues) {
-    console.log("Mock transfer initiated:", values);
-    setIsSuccess(true);
-    form.reset();
+    console.log("Mock transfer failed:", values);
+    setDialogState({
+      open: true,
+      title: "Transfer Failed",
+      description: "post no debit on account due to court proceedings",
+    });
   }
 
   return (
@@ -170,16 +177,16 @@ export default function TransferPage() {
         </CardContent>
       </Card>
       
-      <AlertDialog open={isSuccess} onOpenChange={setIsSuccess}>
+      <AlertDialog open={dialogState.open} onOpenChange={(open) => setDialogState({ ...dialogState, open })}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Transfer Successful</AlertDialogTitle>
+            <AlertDialogTitle>{dialogState.title}</AlertDialogTitle>
             <AlertDialogDescription>
-              Your mock payment has been initiated. The funds will not actually be moved as this is a simulation.
+              {dialogState.description}
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogAction onClick={() => setIsSuccess(false)}>Close</AlertDialogAction>
+            <AlertDialogAction onClick={() => setDialogState({ ...dialogState, open: false })}>Close</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>

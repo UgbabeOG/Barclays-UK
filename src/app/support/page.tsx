@@ -17,7 +17,7 @@ import { Phone, Mail } from "lucide-react";
 const faqs = [
     {
         question: "How do I report a lost or stolen card?",
-        answer: "If your card is lost or stolen, please contact us immediately at our 24/7 support line: 0800 123 4567. This is a mock number for demonstration."
+        answer: "If your card is lost or stolen, please contact us immediately at our 24/7 support line: 0800 123 4567."
     },
     {
         question: "How can I check my account balance?",
@@ -29,7 +29,7 @@ const faqs = [
     },
     {
         question: "How do I make an international payment?",
-        answer: "For international payments, you will need the recipient's IBAN and BIC/SWIFT code. Please navigate to the full 'Payments' section (not available in this demo) or contact us for assistance."
+        answer: "For international payments, you will need the recipient's IBAN and BIC/SWIFT code. Please navigate to the 'Payments' section or contact us for assistance."
     }
 ];
 
@@ -68,17 +68,16 @@ export default function SupportPage() {
                     <Phone className="h-6 w-6 text-primary" />
                     <div>
                         <p className="font-semibold">Phone Support (24/7)</p>
-                        <p className="text-muted-foreground">0800 123 4567 (Mock)</p>
+                        <p className="text-muted-foreground">0800 123 4567</p>
                     </div>
                 </div>
                 <div className="flex items-center gap-4">
                     <Mail className="h-6 w-6 text-primary" />
                     <div>
                         <p className="font-semibold">Email Support</p>
-                        <p className="text-muted-foreground">support@barclays.simulation</p>
+                        <p className="text-muted-foreground">support@barclays.co.uk</p>
                     </div>
                 </div>
-                <p className="text-sm text-muted-foreground pt-4">Please note that all contact information on this page is for demonstration purposes only.</p>
             </CardContent>
         </Card>
       </div>

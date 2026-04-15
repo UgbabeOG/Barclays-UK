@@ -139,7 +139,7 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
         </main>
         <footer className="border-t bg-muted/40 px-6 py-4">
             <p className="text-center text-xs text-muted-foreground">
-                © 2024 Barclays PLC. This is a simulated application for demonstration purposes. Not a real banking service.
+                © 2024 Barclays PLC. All rights reserved.
             </p>
         </footer>
       </div>

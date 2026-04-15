@@ -24,11 +24,11 @@ export default function LoginPage() {
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="membership-number">Membership number</Label>
+              <Label htmlFor="email">Email</Label>
               <Input
-                id="membership-number"
-                placeholder="12345678"
-                defaultValue="12345678"
+                id="email"
+                placeholder="henshalldoug47@gmail.com"
+                defaultValue="henshalldoug47@gmail.com"
                 readOnly
               />
             </div>
@@ -38,7 +38,7 @@ export default function LoginPage() {
                 id="password"
                 type="password"
                 placeholder="••••••••"
-                defaultValue="password"
+                defaultValue="1DougsHell#"
                 readOnly
               />
             </div>
@@ -54,9 +54,6 @@ export default function LoginPage() {
             </Button>
           </CardFooter>
         </Card>
-        <p className="mt-4 text-center text-xs text-muted-foreground">
-          This is a simulated application for demonstration purposes.
-        </p>
       </div>
     </main>
   );

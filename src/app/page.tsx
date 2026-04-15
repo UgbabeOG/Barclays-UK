@@ -28,7 +28,7 @@ export default function Home() {
                     Secure, Simple, and Smart Banking
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Experience the future of banking with Barclays. This is a demonstration app showcasing modern web technologies and a best-in-class user experience.
+                    Experience the future of banking with Barclays. Manage your finances with ease and security.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -58,7 +58,7 @@ export default function Home() {
                 <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm text-secondary-foreground">Key Features</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Everything You Need, Nothing You Don't</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Our simulated banking platform provides all the essential features in a clean, intuitive interface.
+                  Our banking platform provides all the essential features in a clean, intuitive interface.
                 </p>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default function Home() {
                 <ShieldCheck className="h-12 w-12 mx-auto text-primary" />
                 <h3 className="text-xl font-bold">Bank-Grade Security</h3>
                 <p className="text-muted-foreground">
-                  Your data is protected with the latest security standards. (Simulated)
+                  Your data is protected with the latest security standards.
                 </p>
               </div>
               <div className="grid gap-1 text-center">
@@ -89,7 +89,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted-foreground">&copy; 2024 Barclays PLC. This is a simulated application for demonstration purposes.</p>
+        <p className="text-xs text-muted-foreground">&copy; 2024 Barclays PLC. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link href="#" className="text-xs hover:underline underline-offset-4 text-muted-foreground">
             Terms of Service
